@@ -237,7 +237,7 @@ margin-right:10px;
     align-items: flex-end;
     gap: 10px;
     position: relative;
-	 margin-top: 20px; /* ✅ أضف مسافة بين زر الإضافة والمربعات */
+	 margin-top: 20px; /
 }
 
 .review {
@@ -249,8 +249,8 @@ margin-right:10px;
     border-radius: 20px;
     border: 2px solid #000;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-    width: 250px; /* جعل جميع المربعات بنفس العرض */
-    height: 250px; /* جعل جميع المربعات بنفس الارتفاع */
+    width: 250px;
+    height: 250px; 
     text-align: center;
 }
 
@@ -264,8 +264,8 @@ margin-right:10px;
 .highlighted {
     background-color:#cb2932;
     color: white;
-    width: 250px; /* توحيد الحجم */
-    height: 250px; /* توحيد الحجم */
+    width: 250px; 
+    height: 250px; 
 }
 .review:nth-child(2) { 
     background-color:#cb2932;

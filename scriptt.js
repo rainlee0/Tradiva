@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const favButton = document.getElementById("favorite-btn");
 
     favButton.addEventListener("click", function() {
-        favButton.classList.toggle("active"); // يبدل اللون بين الرمادي والأحمر
+        favButton.classList.toggle("active");
     });
 });
 
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         review.classList.add("review");
 
         review.innerHTML = `
-            <img  src="comment-pic.png" alt="User">
+            <img  src="img/User.jpg" alt="User">
             <p>${username}</p>
             <p>${text}</p>
             <div class="stars">${"⭐".repeat(rating)}</div>
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         button.parentElement.remove();
     };
 
-    // **مثال لإضافة مراجعة تلقائيًا عند التحميل (يمكن استبداله بنظام قاعدة بيانات لاحقًا)**
+    
     createReview("User1", "Great experience!", 5);
     createReview("User2", "Loved it!", 4);
     createReview("User3", "Would visit again!", 5);
