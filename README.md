@@ -19,5 +19,5 @@ Tradiva is a travel guide website designed to help travelers explore different c
 
 ## Links
 
-- GitHub Repository: https://github.com/yourusername/Tradiva
+- GitHub Repository: https://github.com/rainlee0/Tradiva
 - Jira Project: https://2025-it320320-section52856-group2.atlassian.net/jira/software/projects/IT320/boards/3/backlog
