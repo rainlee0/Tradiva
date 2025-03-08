@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Places in France</title>
+    <link rel="stylesheet" href="stylesFrance.css">
+    <link rel="stylesheet" href="HeaderFoter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..1000&family=Libre+Baskerville:wght@400;700&family=Nunito:wght@200..1000&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/lolo.png">
+</head>
+<body>   
+    <div class="nav-bar">
+        <span class="logo">TRADIVA</span>
+        <input type="text" placeholder="Search..." class="search-bar">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profilePage.html">Profile</a>
+            <a href="favPage.html">Favorite</a>
+        </nav>
+    </div>
+    
+    <div class="container">
+        <header>
+            <a href="HomePage.html"><button class="back-btn">&#x2B05;</button></a>
+            <button id="favorite-btn" class="favorite">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+            <div class="title">
+                <h1>France</h1>
+                <img class="flag" src="img/Frence_flag.jpeg" alt="France Flag">
+            </div>
+            
+            <p><b>France: A Blend of History, Art, and Elegance</b></p>
+            <p>France is a country where rich history meets modern sophistication. It is home to iconic landmarks like the Eiffel Tower, 
+                the Louvre Museum, and the picturesque countryside of Provence. 
+                Known for its exquisite cuisine, fashion, and artistic heritage, France’s culture reflects a deep appreciation for beauty, tradition, and innovation.</p>
+        </header>
+
+        <hr>
+        
+        <nav class="categories">
+            <a href="FranceTips.html"><button>Tips</button></a>
+            <a href="FranceLaws.html"><button>Laws</button></a>
+            <a href="FranceFood.html"><button>Food</button></a>
+            <a href="FrancePlace.html"><button>Place</button></a>
+            <a href="FranceTradition.html"><button>Tradition</button></a>
+        </nav>
+
+        <section class="travel-tips">
+            <h2>🏛️ 4 Famous Places in France</h2>
+            
+            <h3>• 🗼 Eiffel Tower – The Icon of France</h3>
+            <p>The Eiffel Tower is the most famous landmark in France and one of the most visited attractions in the world. Standing 330 meters tall, it was built for the 1889 World’s Fair and has become a symbol of Paris. Visitors can climb to the top for breathtaking views of the city.</p>
+            <p><b>🔹 Fun Fact:</b> The Eiffel Tower shrinks by about 15 cm (6 inches) in winter due to the cold!</p>
+
+            <h3>• 🎨 Louvre Museum – Home to the Mona Lisa</h3>
+            <p>The Louvre Museum in Paris is the largest and most visited museum in the world, home to over 35,000 artworks, including Leonardo da Vinci’s Mona Lisa. The museum was originally a royal palace before becoming a public museum in 1793.</p>
+            <p><b>🔹 Fun Fact:</b> The Louvre’s glass pyramid entrance was designed by Chinese-American architect I. M. Pei in 1989!</p>
+
+            <h3>• 🏝️ Mont Saint-Michel – The Magical Island Abbey</h3>
+            <p>Mont Saint-Michel is a stunning medieval abbey built on a small island in Normandy. During high tide, it looks like a floating castle, making it one of the most unique sights in France. The abbey has been a pilgrimage site for centuries.</p>
+            <p><b>🔹 Fun Fact:</b> The island is accessible by foot only during low tide, as the surrounding water rises quickly!</p>
+
+            <h3>• 👑 Palace of Versailles – The Royal Masterpiece</h3>
+            <p>The Palace of Versailles is a lavish royal palace built by King Louis XIV in the 17th century. It features gold-covered halls, luxurious gardens, and the famous Hall of Mirrors. It was the seat of French royalty until the French Revolution.</p>
+            <p><b>🔹 Fun Fact:</b> The palace has over 2,300 rooms, but the most famous one is the Hall of Mirrors, which was used for important diplomatic meetings.</p>
+        </section>
+
+        <section class="reviews">
+            <h2>Reviews</h2>
+            <button class="add-review-btn" onclick="redirectToReviewPage()">Add Review</button>
+            <div class="review-box" id="review-container"></div>
+        </section>
+    </div>
+
+    <footer class="footer" id="Footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Tradiva</h3>
+                <p>Your gateway to discovering hidden gems, understanding cultures, and making the most of every journey.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Our Mission</h3>
+                <p>We strive to connect travelers with authentic experiences, helping them explore new destinations with confidence and respect.</p>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 Tradiva. All rights reserved.</p>
+    </footer>
+    
+    <script src="scriptt.js"></script>
+</body>
+</html>

@@ -22,46 +22,6 @@ body {
     text-align: center;
 }
 
-.nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: white;
-    padding: 10px 20px;
-    border-radius: 50px;
-    width: 90%;
-    margin: 10px auto;
-    border: 1.5px solid black;
-    position: relative;
-}
-
-.logo {
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: "Libre Baskerville", serif;
-}
-
-.search-bar {
-    padding: 8px 12px;
-    border-radius: 15px;
-    border: 1px solid black;
-    text-align: center;
-    width: 220px;
-}
-
-nav {
-    display: flex;
-    gap: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 16px;
-}
-
 
 .header-background {
     background: #3b5998;
@@ -155,6 +115,9 @@ nav a {
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 2);
     text-decoration: none;
 }
+a {
+    text-decoration: none;
+}
 
 .globe-character {
     position: absolute;
@@ -167,14 +130,14 @@ nav a {
 
 .guide-section {
     display: flex;
-    justify-content: space-between; /* Ensures space between boxes */
-    align-items: center; /* Centers content */
+    justify-content: space-between; 
+    align-items: center; 
     margin: 10em auto;
     width: 80%;
     position: relative;
 }
 
-/* Left & Right Boxes (Smaller than center) */
+
 .guide-box, .extra-box {
     background: #f4f1ec;
     padding: 20px;
@@ -244,10 +207,7 @@ h3{
 
 }
 
-nav a:hover {
-    color: #3b5998;
-    transform: scale(1.1);
-}
+
 h2 {
     font-weight: 00%;
     display: block;
@@ -340,9 +300,9 @@ h2 {
             <span class="logo">TRDIVA</span>
             <input type="text" placeholder="Search..." class="search-bar">
             <nav>
-                <a href="#">Home</a>
-                <a href="#">Profile</a>
-                <a href="#">Favorite</a>
+                <a href="index.html">Home</a>
+                <a href="profilePage.html">Profile</a>
+                <a href="favPage.html">Favorite</a>
             </nav>
         </div>
     </header>
@@ -386,25 +346,25 @@ h2 {
         <h2 id="COUNTRIES">COUNTRIES</h2>
         <div class="countries-container">
             <div class="country-box">
-                <img src="img/korea.png" alt="Korea">
-                <span class="country-name">Korea</span>
+                <a href="KoreaTips.html"><img src="img/korea.png" alt="Korea">
+                <span class="country-name">Korea</span></a>
             </div>
             <div class="country-box">
-                <img src="img/france.png" alt="France">
-                <span class="country-name">France</span>
+                <a href="FrencTips.html"><img src="img/france.png" alt="France">
+                <span class="country-name">France</span></a>
             </div>
 
             <div class="country-box">
-                <img src="img/Saudi Arabia.png" alt="France">
-                <span class="country-name">Saudi Arabia</span>
+                <a href="SaudiTips.html"><img src="img/Saudi Arabia.png" alt="Saudi Arabia">
+                <span class="country-name">Saudi Arabia</span></a>
             </div>
             <div class="country-box">
-                <a href="ItalyFood.html"><img src="img/Italy.png" alt="France">
+                <a href="ItalyTips.html"><img src="img/Italy.png" alt="Italy">
                 <span class="country-name">Italy</span></a>
             </div>
             <div class="country-box">
-                <img src="img/India.png" alt="France">
-                <span class="country-name">India</span>
+                <a href="IndiaTips.html"> <img src="img/India.png" alt="India">
+                <span class="country-name">India</span></a>
             </div>
     
       
@@ -418,8 +378,8 @@ h2 {
                 <span class="country-name">South Africa</span>
             </div>
             <div class="country-box">
-                <img src="img/Japan.png" alt="France">
-                <span class="country-name">Japan</span>
+                <a href="JapanTips.html"> <img src="img/Japan.png" alt="France">
+                <span class="country-name">Japan</span></a>
             </div>
             <div class="country-box">
                 <img src="img/China.png" alt="France">

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>France Tips</title>
+    <link rel="stylesheet" href="stylesFrance.css">
+    <link rel="stylesheet" href="HeaderFoter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..1000&family=Libre+Baskerville:wght@400;700&family=Nunito:wght@200..1000&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/lolo.png">
+</head>
+<body>   
+    <div class="nav-bar">
+        <span class="logo">TRADIVA</span>
+        <input type="text" placeholder="Search..." class="search-bar">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profilePage.html">Profile</a>
+            <a href="favPage.html">Favorite</a>
+        </nav>
+    </div>
+    
+    <div class="container">
+        <header>
+            <a href="HomePage.html"><button class="back-btn">&#x2B05;</button></a>
+            <button id="favorite-btn" class="favorite">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+            <div class="title">
+                <h1>France</h1>
+                <img class="flag" src="img/Frence_flag.jpeg" alt="France Flag">
+            </div>
+            
+            <p><b>France: A Blend of History, Art, and Elegance</b></p>
+            <p>France is a country where rich history meets modern sophistication. It is home to iconic landmarks like the Eiffel Tower, 
+                the Louvre Museum, and the picturesque countryside of Provence. 
+                Known for its exquisite cuisine, fashion, and artistic heritage, France’s culture reflects a deep appreciation for beauty, tradition, and innovation.</p>
+        </header>
+
+        <hr>
+        
+        <nav class="categories">
+            <a href="FranceTips.html"><button>Tips</button></a>
+            <a href="FranceLaws.html"><button>Laws</button></a>
+            <a href="FranceFood.html"><button>Food</button></a>
+            <a href="FrancePlace.html"><button>Place</button></a>
+            <a href="FranceTradition.html"><button>Tradition</button></a>
+        </nav>
+
+        <section class="travel-tips">
+            <h2>🇫🇷 10 Essential Travel Tips for France:</h2>
+            <ul>
+                <li><b>•📖 Learn Basic French Phrases</b><br>
+                    While many people in France speak English, locals appreciate when visitors try to speak basic French phrases.
+                </li>
+                
+                <li><b>•🤝 Always Greet People Properly</b><br>
+                    Not greeting people is often seen as rude in France.
+                </li>
+                
+                <li><b>•💰 Tipping is Not Required</b><br>
+                    Tipping in France is not mandatory, as service charges are included in the bill.
+                </li>
+                
+                <li><b>•🍽️ French Dining Etiquette is Important</b><br>
+                    Dining in France is considered a social and cultural experience.
+                </li>
+                
+                <li><b>•🚆 Public Transport is the Best Way to Travel</b><br>
+                    France has one of the best public transportation systems.
+                </li>
+                
+                <li><b>•🔇 Avoid Speaking Loudly in Public</b><br>
+                    French people generally speak softly in public. Talking too loudly on public transport or in restaurants is considered disrespectful.
+                </li>
+
+                <li><b>•🚪 Sundays are for Rest</b><br>
+                    Most shops, bakeries, and supermarkets are closed on Sundays, except in tourist areas.
+                </li>
+
+                <li><b>•⚠️ Watch Out for Pickpockets in Tourist Areas</b><br>
+                    Pickpocketing is common in popular areas like the Eiffel Tower, the Louvre, and metro stations.
+                </li>
+
+                <li><b>•🚰 Don’t Expect Free Tap Water at Restaurants</b><br>
+                    In many French restaurants, bottled water is offered instead of tap water, and it comes with a charge.
+                </li>
+
+                <li><b>•⏰ Be Mindful of Mealtimes – Restaurants Have Fixed Hours</b><br>
+                    Most French restaurants only serve lunch from 12:00 PM to 2:30 PM and dinner from 7:00 PM to 10:30 PM.
+                </li>
+            </ul>
+        </section>
+
+        <section class="reviews">
+            <h2>Reviews</h2>
+            <button class="add-review-btn" onclick="redirectToReviewPage()">Add Review</button>
+            <div class="review-box" id="review-container"></div>
+        </section>
+    </div>
+
+    <footer class="footer" id="Footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Tradiva</h3>
+                <p>Your gateway to discovering hidden gems, understanding cultures, and making the most of every journey.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Our Mission</h3>
+                <p>We strive to connect travelers with authentic experiences, helping them explore new destinations with confidence and respect.</p>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 Tradiva. All rights reserved.</p>
+    </footer>
+    
+    <script src="scriptt.js"></script>
+</body>
+</html>

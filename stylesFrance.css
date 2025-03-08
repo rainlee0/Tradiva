@@ -1,0 +1,213 @@
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: #e1ecff; 
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.favorite {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: gray; 
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.favorite.active {
+    color: red;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #000;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    text-align: left;
+    padding: 20px;
+    background-color: #f4f1ec;
+    border-radius: 10px;
+    position: relative;
+    color: #003366; 
+    font-weight: bold;
+    border: 2px solid #000;
+}
+
+.back-btn {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.flag {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 70%; 
+}
+
+.title h1 {
+    color: #003366; 
+    display: inline;
+    font-size: 45px;
+    margin-right: 10px;
+}
+
+
+p {
+    font-size: 15px;
+}
+
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.categories button {
+    background-color: #e0272c; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    border: 2px solid #000;
+}
+
+.categories button:nth-child(2) {
+    background-color: #2d5caa; 
+}
+
+.categories button:nth-child(3) {
+    background-color: #d62828; 
+}
+
+.categories button:nth-child(4) {
+    background-color: #2d5caa; 
+}
+
+.categories button:nth-child(5) {
+    background-color: #d62828; 
+}
+
+.categories button:hover {
+    transform: scale(1.1);
+}
+
+
+.travel-tips {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 2px solid #000;
+}
+
+.travel-tips h2 {
+    font-size: 18px;
+    color: black;
+}
+
+.travel-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.travel-tips li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #d62828; 
+    font-weight: bold;
+}
+
+.travel-tips b {
+    color: #003366; 
+    font-size: 15px;
+}
+
+.review-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f4f1ec;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #000;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.review img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.highlighted {
+    background-color: #003366; 
+    color: white;
+    width: 250px;
+    height: 250px;
+}
+
+.review:nth-child(2) { 
+    background-color: #e0272c; 
+    color: white;
+}
+
+
+
+.add-review-btn, .remove-review-btn {
+    background-color: #e0272c; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 20px;
+}

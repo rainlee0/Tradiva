@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>France Laws</title>
+    <link rel="stylesheet" href="stylesFrance.css">
+    <link rel="stylesheet" href="HeaderFoter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..1000&family=Libre+Baskerville:wght@400;700&family=Nunito:wght@200..1000&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/lolo.png">
+</head>
+<body>   
+    <div class="nav-bar">
+        <span class="logo">TRADIVA</span>
+        <input type="text" placeholder="Search..." class="search-bar">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profilePage.html">Profile</a>
+            <a href="favPage.html">Favorite</a>
+        </nav>
+    </div>
+    
+    <div class="container">
+        <header>
+            <a href="HomePage.html"><button class="back-btn">&#x2B05;</button></a>
+            <button id="favorite-btn" class="favorite">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+            <div class="title">
+                <h1>France</h1>
+                <img class="flag" src="img/Frence_flag.jpeg" alt="France Flag">
+            </div>
+            
+            <p><b>France: A Blend of History, Art, and Elegance</b></p>
+            <p>France is a country where rich history meets modern sophistication. It is home to iconic landmarks like the Eiffel Tower, 
+                the Louvre Museum, and the picturesque countryside of Provence. 
+                Known for its exquisite cuisine, fashion, and artistic heritage, France’s culture reflects a deep appreciation for beauty, tradition, and innovation.</p>
+        </header>
+
+        <hr>
+        
+        <nav class="categories">
+            <a href="FranceTips.html"><button>Tips</button></a>
+            <a href="FranceLaws.html"><button>Laws</button></a>
+            <a href="FranceFood.html"><button>Food</button></a>
+            <a href="FrancePlace.html"><button>Place</button></a>
+            <a href="FranceTradition.html"><button>Tradition</button></a>
+        </nav>
+
+        <section class="travel-tips">
+            <h2>🇫🇷 10 Weird Laws in France:</h2>
+            <ul>
+                <li><b>•🚆 It’s Illegal to Kiss at Train Stations</b><br>
+                    France has banned kissing on train platforms to prevent delays.
+                </li>
+                
+                <li><b>•💍 You Can Marry a Dead Person</b><br>
+                    It is legal to marry a deceased person under special circumstances.
+                </li>
+                
+                <li><b>•🐷 It’s Illegal to Name Your Pig "Napoleon"</b><br>
+                    A strange French law forbids people from naming their pig "Napoleon."
+                </li>
+                
+                <li><b>•📷 It’s Illegal to Take Pictures of the Eiffel Tower at Night</b><br>
+                    The Eiffel Tower’s light show is copyrighted, meaning professional photographers cannot publish night photos of it without permission.
+                </li>
+                
+                <li><b>•⛽ It’s Illegal to Run Out of Gas on the Highway</b><br>
+                    In France, running out of fuel on a highway is considered a traffic offense.
+                </li>
+                
+                <li><b>•🤡 No Clowns in Public Without Permission</b><br>
+                    After a series of pranks involving scary clowns, some cities in France banned people from dressing as clowns in public unless they have official permission.
+                </li>
+
+                <li><b>•🍽️ You Can’t Throw Away Leftover Food in Restaurants</b><br>
+                    A French law requires restaurants to donate unsold food instead of throwing it away.
+                </li>
+
+                <li><b>•🚫 No Swimming in Paris' River Seine</b><br>
+                    Swimming in the River Seine has been banned for decades due to pollution and safety concerns.
+                </li>
+
+                <li><b>•🚗 You Must Have a Breathalyzer in Your Car</b><br>
+                    In France, all drivers are required to carry a breathalyzer (alcohol test kit) in their car at all times.
+                </li>
+
+                <li><b>•👶 You Can’t Name Your Child Anything You Want</b><br>
+                    In France, parents cannot give their children names that could be considered offensive or harmful.
+                </li>
+            </ul>
+           
+        </section>
+
+        <section class="reviews">
+            <h2>Reviews</h2>
+            <button class="add-review-btn" onclick="redirectToReviewPage()">Add Review</button>
+            <div class="review-box" id="review-container"></div>
+        </section>
+    </div>
+
+    <footer class="footer" id="Footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Tradiva</h3>
+                <p>Your gateway to discovering hidden gems, understanding cultures, and making the most of every journey.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Our Mission</h3>
+                <p>We strive to connect travelers with authentic experiences, helping them explore new destinations with confidence and respect.</p>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 Tradiva. All rights reserved.</p>
+    </footer>
+    
+    <script src="scriptt.js"></script>
+</body>
+</html>
