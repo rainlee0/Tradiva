@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Cuisine</title>
+    <link rel="stylesheet" href="stylesLonden.css">
+    <link rel="stylesheet" href="HeaderFoter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..1000&family=Libre+Baskerville:wght@400;700&family=Nunito:wght@200..1000&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/lolo.png">
+</head>
+<body>   
+    <div class="nav-bar">
+        <span class="logo">TRADIVA</span>
+        <input type="text" placeholder="Search..." class="search-bar">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profilePage.html">Profile</a>
+            <a href="favPage.html">Favorite</a>
+        </nav>
+    </div>
+    
+    <div class="container">
+        <header>
+            <a href="HomePage.html"><button class="back-btn">&#x2B05;</button></a>
+            <button id="favorite-btn" class="favorite">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+            <div class="title">
+                <h1>London</h1>
+                <img class="flag" src="img/Flag_london.png" alt="London Flag">
+            </div>
+            
+            <p><b>London: A Timeless Blend of History and Modernity</b>
+                <b>London is a city where historic landmarks meet contemporary vibrancy. Home to iconic sites like Big Ben,</b>
+                <b> the Tower of London, and Buckingham Palace, it is also a global hub for culture, fashion, and innovation. </b>
+                <b> Known for its royal heritage,diverse cuisine, and lively arts scene, London’s charm lies in its unique mix of tradition and modern life.</b></p>
+                 </header>
+    
+            <hr>
+            
+            <nav class="categories">
+                <a href="LondonTips.html"><button>Tips</button></a>
+                <a href="LondonLaws.html"><button>Laws</button></a>
+                <a href="LondonFood.html"><button>Food</button></a>
+                <a href="LondonPlace.html"><button>Place</button></a>
+                <a href="LondonTradition.html"><button>Tradition</button></a>
+            </nav>
+    
+    
+            <section class="travel-tips">
+          
+                <h2>🍽️ 2 Traditional London Dishes:</h2>
+                <ul>
+                    <li><b>• Fish and Chips – The Most Iconic British Dish 🐟</b><br>
+                        <b>Ingredients:</b><br>
+                        • 2 large fillets of white fish (cod or haddock)<br>
+                        • 1 cup all-purpose flour<br>
+                        • 1 cup beer (or sparkling water for non-alcoholic)<br>
+                        • 1 tsp baking powder<br>
+                        • 1 tsp salt<br>
+                        • 1 tsp black pepper<br>
+                        • Vegetable oil (for frying)<br>
+                        • 2 large potatoes (cut into thick chips)<br>
+                        • Vinegar & salt (for serving)<br>
+
+                        <br><b>Instructions:</b><br>
+                        • Prepare the batter: In a bowl, mix flour, baking powder, salt, and black pepper. Gradually whisk in beer (or sparkling water) until smooth. Let it rest for 10 minutes.<br>
+                        • Prepare the batter: In a bowl, mix flour, baking powder, salt, and black pepper. Gradually whisk in beer (or sparkling water) until smooth. Let it rest for 10 minutes. <br>
+                        •Fry the fish: Dip fish fillets into the batter, letting excess drip off, and fry in the hot oil for 5-6 minutes until golden brown.<br>
+                        <br><b>Full English Breakfast – The Classic British Morning Feast 🥐</b><br>
+                        <b>Ingredients:</b><br>
+                        • 2 eggs<br>
+                        • 2 sausages (pork or beef)<br>
+                        • 2 slices of bacon<br>
+                        • 1 tomato (halved)<br>
+                        • 1 cup mushrooms (sliced)<br>
+                        • 1 slice black pudding (optional)<br>
+                        • 1 can baked beans<br>
+                        • 1 slice of bread (toasted) <br>
+                        • 1 tbsp butter<br>
+                        • Salt & black pepper to taste<br>
+
+                    </li>
+                    <br><b>🔴 Allergy Warnings:</b><br>
+                    • Contains gluten (toast, sausages, black pudding)<br>
+                    • Contains dairy (butter) – Can be substituted with plant-based options.<br>
+
+                    <li><b>Instructions</b><br>
+                        • Cook the sausages & bacon: In a large pan, cook sausages on medium heat for 10 minutes, turning occasionally. Add bacon and cook until crispy.<br>
+                        • Sauté the vegetables: In the same pan, add sliced mushrooms and halved tomato, cooking for 5 minutes.<br>
+                        • Fry the eggs: In a separate pan, melt butter and fry eggs until desired doneness.<br>
+                        • Heat the beans: Warm up baked beans in a small saucepan.<br>
+                    </li>
+                </ul>
+                
+                
+                                                                       <div class="icon">🍽️</div>
+                
+                        </section>
+        <section class="reviews">
+            <h2>Reviews</h2>
+            <button class="add-review-btn" onclick="redirectToReviewPage()">Add Review</button>
+            <div class="review-box" id="review-container"></div>
+        </section>
+    </div>
+
+    <footer class="footer" id="Footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Tradiva</h3>
+                <p>Your gateway to discovering hidden gems, understanding cultures, and making the most of every journey.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Our Mission</h3>
+                <p>We strive to connect travelers with authentic experiences, helping them explore new destinations with confidence and respect.</p>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 Tradiva. All rights reserved.</p>
+    </footer>
+    
+    <script src="scriptt.js"></script>
+</body>
+</html>
