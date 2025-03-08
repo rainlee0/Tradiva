@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South African Dishes</title>
+    <link rel="stylesheet" href="SouthAfricastyles.css">
+    <link rel="stylesheet" href="HeaderFoter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..1000&family=Libre+Baskerville:wght@400;700&family=Nunito:wght@200..1000&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/lolo.png">
+</head>
+<body>   
+    <div class="nav-bar">
+        <span class="logo">TRADIVA</span>
+        <input type="text" placeholder="Search..." class="search-bar">
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="profilePage.html">Profile</a>
+            <a href="favPage.html">Favorite</a>
+        </nav>
+    </div>
+    
+    <div class="container">
+        <header>
+            <button id="favorite-btn" class="favorite">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+            <div class="title">
+                <h1>South Africa</h1>
+                <img class="flag" src="img/SouthAfrica_flag.jpeg" alt="South Africa Flag">
+            </div>
+            <p>South Africa is a country where rich cultural heritage meets stunning landscapes. Home to iconic landmarks like Table Mountain, Kruger National Park, and Robben Island, it is known for its wildlife, vibrant cities, and deep history. With a blend of diverse traditions, languages, and breathtaking scenery.</p>
+
+        </header>
+
+        <hr>
+        
+        <nav class="categories">
+            <a href="SouthAfricaTips.html"><button>Tips</button></a>
+            <a href="SouthAfricaLaws.html"><button>Laws</button></a>
+            <a href="SouthAfricaFood.html"><button>Food</button></a>
+            <a href="SouthAfricaPlace.html"><button>Place</button></a>
+            <a href="SouthAfricaTradition.html"><button>Tradition</button></a>
+        </nav>
+
+        <section class="travel-tips">
+            <h2>🍽️ 2 Traditional South African Dishes:</h2>
+
+            <h3>• Bobotie – The National Dish of South Africa</h3>
+            <p><b>Ingredients:</b></p>
+            <ul>
+                <li>500g minced beef or lamb</li>
+                <li>1 slice of bread soaked in milk</li>
+                <li>1 onion (chopped)</li>
+                <li>2 cloves garlic (minced)</li>
+                <li>1 tbsp curry powder</li>
+                <li>1 tsp ground cinnamon</li>
+                <li>1 tbsp sugar</li>
+                <li>1 tbsp vinegar</li>
+                <li>1 tbsp Worcestershire sauce</li>
+                <li>1 egg for the mixture</li>
+                <li>2 eggs + ½ cup milk (for the topping)</li>
+                <li>2-3 raisins (optional)</li>
+                <li>Salt & black pepper to taste</li>
+                <li>Bay leaves for garnish</li>
+            </ul>
+            
+            <p><b>Instructions:</b></p>
+            <ul>
+                <li>Preheat the oven to 180°C (350°F).</li>
+                <li>Fry the onions and garlic in oil until soft. Add curry powder, turmeric, and cinnamon, stirring for 1 minute.</li>
+                <li>Prepare the meat: Add minced meat and cook until browned. Stir in apricot jam, vinegar, Worcestershire sauce, and soaked bread. Cook for 5 minutes.</li>
+                <li>Transfer to a baking dish. Put 2 eggs with milk and pour over the meat mixture.</li>
+                <li>Bake for 30-40 minutes until golden brown.</li>
+            </ul>
+
+            <p><b>⚠️ Allergy Warnings:</b></p>
+            <ul>
+                <li>Contains dairy (milk, eggs) – Can be substituted with plant-based options.</li>
+                <li>Contains gluten (bread).</li>
+            </ul>
+
+            <hr>
+
+            <h3>• Bunny Chow – South Africa’s Famous Street Food</h3>
+            <p><b>Ingredients:</b></p>
+            <ul>
+                <li>1 whole white bread loaf (cut in half, hollowed out)</li>
+                <li>500g chicken, beef, or lamb (cubed)</li>
+                <li>1 onion (chopped)</li>
+                <li>2 cloves garlic (minced)</li>
+                <li>1 cup chickpeas</li>
+                <li>1 cup chicken or vegetable stock</li>
+                <li>2 potatoes (cubed)</li>
+                <li>1 tbsp curry powder</li>
+                <li>Salt & black pepper to taste</li>
+                <li>Coriander (for garnish)</li>
+            </ul>
+
+            <p><b>Instructions:</b></p>
+            <ul>
+                <li>Prepare the bread: Cut a loaf of bread in half and hollow out the center to create a “bowl.”</li>
+                <li>Cook the curry: In a pan, fry onions and garlic in oil until soft. Add curry powder, cumin, coriander, and turmeric, then stir for 1 minute.</li>
+                <li>Add the meat and vegetables: Add meat, potatoes, stock, chickpeas, and tomatoes. Simmer for 30 minutes until thick.</li>
+                <li>Assemble the Bunny Chow: Fill the hollowed-out bread with the curry.</li>
+            </ul>
+
+            <p><b>⚠️ Allergy Warnings:</b></p>
+            <ul>
+                <li>Contains gluten (bread) – Use gluten-free bread if needed.</li>
+            </ul>
+        </section>
+
+        <section class="reviews">
+            <h2>Reviews</h2>
+            <button class="add-review-btn" onclick="redirectToReviewPage()">Add Review</button>
+            <div class="review-box" id="review-container"></div>
+        </section>
+    </div>
+
+    <footer class="footer" id="Footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Tradiva</h3>
+                <p>Your gateway to discovering hidden gems, understanding cultures, and making the most of every journey.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Our Mission</h3>
+                <p>We strive to connect travelers with authentic experiences, helping them explore new destinations with confidence and respect.</p>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 Tradiva. All rights reserved.</p>
+    </footer>
+    
+    <script src="scriptt.js"></script>
+</body>
+</html>
