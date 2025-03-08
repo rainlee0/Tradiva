@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traditional Greek Dishes</title>
+    <link rel="stylesheet" href="stylesGreece.css">
+    <link rel="stylesheet" href="HeaderFoter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..1000&family=Libre+Baskerville:wght@400;700&family=Nunito:wght@200..1000&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/lolo.png">
+</head>
+<body>   
+    <div class="nav-bar">
+        <span class="logo">TRADIVA</span>
+        <input type="text" placeholder="Search..." class="search-bar">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profilePage.html">Profile</a>
+            <a href="favPage.html">Favorite</a>
+        </nav>
+    </div>
+    
+    <div class="container">
+        <header>
+            <a href="HomePage.html"><button class="back-btn">&#x2B05;</button></a>
+            <button id="favorite-btn" class="favorite">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+            <div class="title">
+                <h1>Greece</h1>
+                <img class="flag" src="img/Greece_flag.jpeg" alt="Greece Flag">
+            </div>
+            
+        
+            <p>Greece is a land of rich history and breathtaking landscapes, home to iconic landmarks like the Parthenon, Santorini’s white-washed houses, and the crystal-clear waters of the Aegean Sea. Known for its mythology, philosophy, and delicious Mediterranean cuisine, Greece’s culture reflects a deep connection to its ancient heritage and vibrant traditions.</p>
+        </header>
+
+        <hr>
+        
+        <nav class="categories">
+            <a href="GreeceTips.html"><button>Tips</button></a>
+            <a href="GreeceLaws.html"><button>Laws</button></a>
+            <a href="GreeceFood.html"><button>Food</button></a>
+            <a href="GreecePlace.html"><button>Place</button></a>
+            <a href="GreeceTradition.html"><button>Tradition</button></a>
+        </nav>
+
+        <section class="travel-tips">
+            <h2>🍽️ 2 Traditional Greek Dishes</h2>
+            
+            <ul>
+                <li><b>• 🥘 Moussaka – The Greek Eggplant Casserole</b><br>
+                    <b>Ingredients:</b>
+                    <ul>
+                        <li>2 large eggplants (sliced)</li>
+                        <li>500g ground beef or lamb</li>
+                        <li>1 onion (chopped)</li>
+                        <li>2 cloves garlic (minced)</li>
+                        <li>1 can (400g) crushed tomatoes</li>
+                        <li>1 tsp cinnamon</li>
+                        <li>1 tsp oregano</li>
+                        <li>1 cup béchamel sauce (made from butter, flour, and milk)</li>
+                        <li>2 cups grated cheese (Parmesan or Kefalotyri)</li>
+                        <li>2 tbsp olive oil</li>
+                        <li>Salt & black pepper to taste</li>
+                    </ul>
+                    
+                    <b>Allergy Warnings:</b>
+                    <ul>
+                        <li>Contains dairy (béchamel, cheese, milk) – Use dairy-free alternatives if needed.</li>
+                        <li>Contains gluten (béchamel sauce) – Use gluten-free flour for the sauce.</li>
+                    </ul>
+
+                    <b>Instructions:</b>
+                    <ol>
+                        <li>Prepare the eggplants: Slice and sprinkle with salt to remove bitterness. Let them sit for 30 minutes, rinse them, and pat dry. Fry or bake them until golden brown.</li>
+                        <li>Cook the meat: Sauté onion and garlic in olive oil, add ground meat, and cook until browned. Add crushed tomatoes, cinnamon, oregano, salt, and pepper. Simmer for 20 minutes.</li>
+                        <li>Assemble the dish: Layer eggplants, meat mixture, then the white sauce, and top with béchamel sauce and cheese.</li>
+                        <li>Bake: Preheat the oven to 180°C (350°F) and bake for 40 minutes until golden brown.</li>
+                    </ol>
+                </li>
+                
+                <li><b>• 🥗 Greek Salad – The Classic Fresh Dish</b><br>
+                    <b>Ingredients:</b>
+                    <ul>
+                        <li>2 large tomatoes (chopped)</li>
+                        <li>1 green bell pepper (sliced)</li>
+                        <li>1 red onion (sliced)</li>
+                        <li>1 cucumber (sliced)</li>
+                        <li>10 Kalamata olives</li>
+                        <li>100g feta cheese (cubed or crumbled)</li>
+                        <li>3 tbsp olive oil</li>
+                        <li>1 tbsp lemon juice (or vinegar)</li>
+                        <li>1 tsp oregano</li>
+                        <li>Salt & black pepper to taste</li>
+                    </ul>
+                    
+                    <b>Allergy Warnings:</b>
+                    <ul>
+                        <li>Contains dairy (feta cheese) – Use dairy-free feta alternatives if needed.</li>
+                    </ul>
+
+                    <b>Instructions:</b>
+                    <ol>
+                        <li>Chop the vegetables: Cut tomatoes, cucumber, bell pepper, and onion.</li>
+                        <li>Assemble the salad: In a large bowl, combine the vegetables, olives, and feta cheese.</li>
+                        <li>Make the dressing: Mix olive oil, lemon juice (or vinegar), oregano, salt, and pepper. Drizzle over the salad.</li>
+                    </ol>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="reviews">
+            <h2>Reviews</h2>
+            <button class="add-review-btn" onclick="redirectToReviewPage()">Add Review</button>
+            <div class="review-box" id="review-container"></div>
+        </section>
+    </div>
+
+    <footer class="footer" id="Footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Tradiva</h3>
+                <p>Your gateway to discovering hidden gems, understanding cultures, and making the most of every journey.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Our Mission</h3>
+                <p>We strive to connect travelers with authentic experiences, helping them explore new destinations with confidence and respect.</p>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 Tradiva. All rights reserved.</p>
+    </footer>
+    
+    <script src="scriptt.js"></script>
+</body>
+</html>

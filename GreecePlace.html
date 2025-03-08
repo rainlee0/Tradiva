@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Places in Greece</title>
+    <link rel="stylesheet" href="stylesGreece.css">
+    <link rel="stylesheet" href="HeaderFoter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..1000&family=Libre+Baskerville:wght@400;700&family=Nunito:wght@200..1000&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/lolo.png">
+</head>
+<body>   
+    <div class="nav-bar">
+        <span class="logo">TRADIVA</span>
+        <input type="text" placeholder="Search..." class="search-bar">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profilePage.html">Profile</a>
+            <a href="favPage.html">Favorite</a>
+        </nav>
+    </div>
+    
+    <div class="container">
+        <header>
+            <a href="HomePage.html"><button class="back-btn">&#x2B05;</button></a>
+            <button id="favorite-btn" class="favorite">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+            <div class="title">
+                <h1>Greece</h1>
+                <img class="flag" src="img/Greece_flag.jpeg" alt="Greece Flag">
+            </div>
+            
+            <p>Greece is a land of rich history and breathtaking landscapes, home to iconic landmarks like the Parthenon, Santorini’s white-washed houses, and the crystal-clear waters of the Aegean Sea. Known for its mythology, philosophy, and delicious Mediterranean cuisine, Greece’s culture reflects a deep connection to its ancient heritage and vibrant traditions.</p>
+        </header>
+
+        <hr>
+        
+        <nav class="categories">
+            <a href="GreeceTips.html"><button>Tips</button></a>
+            <a href="GreeceLaws.html"><button>Laws</button></a>
+            <a href="GreeceFood.html"><button>Food</button></a>
+            <a href="GreecePlace.html"><button>Place</button></a>
+            <a href="GreeceTradition.html"><button>Tradition</button></a>
+        </nav>
+
+        <section class="travel-tips">
+            <h2>📍 4 Famous Places in Greece</h2>
+            
+            <ul>
+                <li><b>• 🏛️ Acropolis of Athens – The Heart of Ancient Greece</b><br>
+                    The Acropolis of Athens is one of the most iconic landmarks in Greece, featuring the Parthenon, a temple dedicated to the goddess Athena. This UNESCO World Heritage site offers breathtaking views of Athens and is a must-visit for history lovers.<br>
+                    <b>🔹 Fun Fact:</b> The Parthenon was once painted in bright colors, but time and weather wore them away!
+                </li>
+                
+                <li><b>• 🌅 Santorini – The Most Romantic Island</b><br>
+                    Famous for its white-washed buildings and blue-domed churches, Santorini is one of the most beautiful islands in the world. It was formed by a volcanic eruption, creating its dramatic cliffs and stunning caldera views.<br>
+                    <b>🔹 Fun Fact:</b> The sunsets in Oia, Santorini, are considered among the most beautiful in the world!
+                </li>
+                
+                <li><b>• 🏔️ Meteora – The Floating Monasteries</b><br>
+                    Meteora is home to breathtaking monasteries built on towering rock formations. The monasteries were constructed by monks seeking isolation and protection during the medieval period. Today, six monasteries remain open for visitors.<br>
+                    <b>🔹 Fun Fact:</b> The name "Meteora" means "suspended in the air," perfectly describing the monasteries' dramatic location!
+                </li>
+                
+                <li><b>• 🔮 Delphi – The Oracle of Ancient Greece</b><br>
+                    Delphi was once considered the center of the ancient world and home to the Oracle of Apollo, where people came to seek prophecies and guidance. The site includes the Temple of Apollo, a stadium, and ancient ruins surrounded by mountains.<br>
+                    <b>🔹 Fun Fact:</b> Ancient Greeks believed that the god Apollo spoke through the Oracle, giving cryptic predictions about the future.
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="reviews">
+            <h2>Reviews</h2>
+            <button class="add-review-btn" onclick="redirectToReviewPage()">Add Review</button>
+            <div class="review-box" id="review-container"></div>
+        </section>
+    </div>
+
+    <footer class="footer" id="Footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Tradiva</h3>
+                <p>Your gateway to discovering hidden gems, understanding cultures, and making the most of every journey.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Our Mission</h3>
+                <p>We strive to connect travelers with authentic experiences, helping them explore new destinations with confidence and respect.</p>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 Tradiva. All rights reserved.</p>
+    </footer>
+    
+    <script src="scriptt.js"></script>
+</body>
+</html>

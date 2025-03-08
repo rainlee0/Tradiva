@@ -1,0 +1,251 @@
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: #cde0f5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 700px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid black;
+    text-align: left;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f1ec;
+    border-radius: 10px;
+    position: relative;
+    color: #124c91;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+.back-btn {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.favorite {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.favorite.active {
+    color: red;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    max-width: 70%;
+    text-align: center;
+    margin-right: .5em;
+}
+
+.title h1 {
+    color: #124c91;
+    font-size: 50px;
+    margin-bottom: 10px; 
+    text-align: center;
+    
+}
+
+.title img {
+    width: 80px; 
+    height: auto;
+}
+
+
+.flag {
+    width: 80px;
+    height: auto;
+}
+
+p {
+    font-size: 15px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.categories button {
+    background-color: #124c91;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    border: 2px solid black;
+}
+
+.categories button:nth-child(2) {
+    background-color: #245da9;
+}
+
+.categories button:nth-child(3) {
+    background-color: #124c91;
+}
+
+.categories button:nth-child(4) {
+    background-color: #245da9;
+}
+
+.categories button:nth-child(5) {
+    background-color: #124c91;
+}
+
+.categories button:hover {
+    transform: scale(1.1);
+}
+
+.travel-tips {
+    background-color: #f4f1ec;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 2px solid black;
+}
+
+.travel-tips h2 {
+    font-size: 20px;
+    color: #124c91;
+    text-align: center;
+    font-weight: bold;
+}
+
+.travel-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.travel-tips li {
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #245da9;
+    font-weight: bold;
+}
+
+.travel-tips b {
+    color: #124c91;
+    font-size: 16px;
+}
+
+.travel-image {
+    display: block;
+    margin: 20px auto;
+    width: 120px;
+    height: auto;
+}
+
+.review-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f4f1ec;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+.review img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.highlighted {
+    background-color: #124c91;
+    color: white;
+    width: 250px;
+    height: 250px;
+}
+
+.review:nth-child(2) {
+    background-color: #245da9;
+    color: white;
+}
+
+.footer {
+    background: #124c91;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-section {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    font-size: 14px;
+}
+
+.add-review-btn, .remove-review-btn {
+    background-color: #124c91;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 20px;
+}
