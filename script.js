@@ -12,21 +12,21 @@ document.addEventListener("DOMContentLoaded", function () {
         loginScreen.style.display = "flex";
     }
 
-    // Attach functions globally
+    
     window.showSignup = showSignup;
     window.showLogin = showLogin;
 
-    // Handle form submission and redirect to index.html
+    
     document.querySelector(".signup-screen form").addEventListener("submit", function (event) {
         event.preventDefault();
-        window.location.href = "index.html";
+        window.location.href = "Home.html";
     });
 
     document.querySelector(".login-screen form").addEventListener("submit", function (event) {
         event.preventDefault();
-        window.location.href = "index.html";
+        window.location.href = "Home.html";
     });
 
-    // Initially show Sign Up screen
+
     showSignup();
 });
