@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradiva Reviews</title>
+    <link rel="stylesheet" href="HeaderFoter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <style>
+        body {
+            font-family: "Nunito", sans-serif;
+            background-color: #e1ecff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-image: url('img/subtle-world-map.png'); /* Soft background */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+      
+        .container {
+            width: 90%;
+            max-width: 600px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1.5px solid #000;
+            position: relative;
+            overflow: hidden;
+            margin: auto;
+        }
+        h1 {
+            color: #003366;
+            margin-bottom: 5px;
+        }
+        p.description {
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        textarea {
+        width: 90%;
+        height: 100px;
+        padding: 10px;
+        border: 1px solid #000;
+        border-radius: 10px;
+        font-size: 16px;
+        display: block;
+        margin: 10px auto; /* This ensures it is centered */
+        resize: none;
+        transition: 0.3s ease-in-out;
+        text-align: center; /* Center text inside textarea */
+    }
+
+        textarea:focus {
+            outline: none;
+            border-color: #003366;
+            box-shadow: 0 0 8px rgba(0, 51, 102, 0.4);
+        }
+        .rating {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .star {
+            font-size: 30px;
+            cursor: pointer;
+            color: gray;
+            transition: color 0.3s, transform 0.2s;
+        }
+        .star:hover,
+        .star.active {
+            color: #ffcc00;
+            transform: scale(1.2);
+        }
+        .rating-text {
+            margin-top: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #003366;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .rating-text.visible {
+            opacity: 1;
+        }
+        button {
+            background-color: #e0272c;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            border: 2px solid #000;
+            margin-top: 15px;
+            transition: 0.3s ease-in-out;
+            font-weight: bold;
+        }
+        button:disabled {
+            background-color: gray;
+            cursor: not-allowed;
+        }
+        button:hover:enabled {
+            background-color: #a00;
+            transform: scale(1.05);
+        }
+        .review-preview {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f4f4f4;
+            border-left: 4px solid #003366;
+            text-align: left;
+            font-size: 14px;
+            color: #333;
+            font-style: italic;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <span class="logo">TRADIVA</span>
+        <input type="text" placeholder="Search..." class="search-bar">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profilePage.html">Profile</a>
+            <a href="favPage.html">Favorite</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <h1>Leave a Review</h1>
+        <p class="description">Share your experience and help others discover amazing places!</p>
+        <form id="review-form">
+            <textarea id="review-text" placeholder="Write your review here..." required></textarea>
+            
+            <div class="rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <p class="rating-text" id="rating-text"></p>
+
+            <button type="submit" disabled>Submit Review</button>
+        </form>
+        
+        <div class="review-preview" id="review-preview">
+            <p><b>Your Review:</b></p>
+            <p id="review-content"></p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const stars = document.querySelectorAll(".star");
+            const submitButton = document.querySelector("button[type='submit']");
+            const reviewText = document.getElementById("review-text");
+            const reviewPreview = document.getElementById("review-preview");
+            const reviewContent = document.getElementById("review-content");
+            const ratingText = document.getElementById("rating-text");
+            let selectedRating = 0;
+
+            stars.forEach(star => {
+                star.addEventListener("click", function() {
+                    selectedRating = this.getAttribute("data-value");
+                    stars.forEach(s => s.classList.remove("active"));
+                    for (let i = 0; i < selectedRating; i++) {
+                        stars[i].classList.add("active");
+                    }
+                    submitButton.removeAttribute("disabled");
+                    ratingText.textContent = `Your Rating: ${selectedRating} Stars`;
+                    ratingText.classList.add("visible");
+                });
+            });
+
+            document.getElementById("review-form").addEventListener("submit", function(event) {
+                event.preventDefault();
+                reviewContent.textContent = reviewText.value;
+                reviewPreview.style.display = "block";
+                setTimeout(() => {
+                    window.location.href = "profilePage.html";
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>
