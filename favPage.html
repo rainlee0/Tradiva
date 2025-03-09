@@ -57,6 +57,10 @@
             border: 1px solid black;
             justify-content: space-between;
         }
+
+        a{
+            text-decoration: none;
+        }
         .favorite-item:nth-child(odd) {
             background-color: #2c3e70;
             color: white;
@@ -71,6 +75,12 @@
             border-radius: 10px;
             margin-right: 10px;
         }
+        .favorite-item:hover {
+        transform: scale(1.02);
+        transition: transform 0.3s ease-in-out;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
         .favorite-text {
             font-size: 1rem;
             flex-grow: 1;
@@ -126,22 +136,26 @@
     <div class="favorites-container">
         <div class="favorites-title" style="margin-right: 60%;">Favorite List</div>
         <div class="favorite-items">
-            <div class="favorite-item">
+
+          <div class="favorite-item">
                 <img src="img/korea.png" alt="Korea">
                 <div class="favorite-text">Korea - Tech & culture</div>
                 <span class="favorite-heart">❤️</span>
             </div>
+
             <div class="favorite-item">
                 <img src="img/china.png" alt="China">
                 <div class="favorite-text">China - Innovation</div>
                 <span class="favorite-heart">❤️</span>
             </div>
+
             <div class="favorite-item">
                 <img src="img/italy.png" alt="Italy">
                 <div class="favorite-text">Italy - Art & history</div>
                 <span class="favorite-heart">❤️</span>
             </div>
         </div>
+
         <div class="empty-message">
             <img src="img/sleeping.png" alt="Empty Favorites" class="empty-image">
             <p>Your favorites are taking a nap. Add some to wake them up!</p>

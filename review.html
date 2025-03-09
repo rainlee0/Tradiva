@@ -23,6 +23,7 @@
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
+            
         }
       
         .container {
@@ -35,6 +36,8 @@
             position: relative;
             overflow: hidden;
             margin: auto;
+            flex-grow: 1;
+            margin-top: 1em;
         }
         h1 {
             color: #003366;
@@ -53,10 +56,10 @@
         border-radius: 10px;
         font-size: 16px;
         display: block;
-        margin: 10px auto; /* This ensures it is centered */
+        margin: 10px auto;
         resize: none;
         transition: 0.3s ease-in-out;
-        text-align: center; /* Center text inside textarea */
+        text-align: center; 
     }
 
         textarea:focus {
@@ -124,6 +127,25 @@
             font-style: italic;
             border-radius: 10px;
         }
+        .footer {
+    background: #2c3e70;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
     </style>
 </head>
 <body>
@@ -160,6 +182,19 @@
             <p id="review-content"></p>
         </div>
     </div>
+    <footer class="footer" id="Footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Tradiva</h3>
+                <p>Your gateway to discovering hidden gems, understanding cultures, and making the most of every journey.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Our Mission</h3>
+                <p>We strive to connect travelers with authentic experiences, helping them explore new destinations with confidence and respect.</p>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 Tradiva. All rights reserved.</p>
+    </footer>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -194,5 +229,7 @@
             });
         });
     </script>
+    
+
 </body>
 </html>
