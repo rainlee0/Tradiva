@@ -12,11 +12,15 @@ document.addEventListener("DOMContentLoaded", function () {
         loginScreen.style.display = "flex";
     }
 
-    
+    function enterAsGuest() {
+        window.location.href = "Home.html";
+    }
+
     window.showSignup = showSignup;
     window.showLogin = showLogin;
+    window.enterAsGuest = enterAsGuest;
 
-    
+   
     document.querySelector(".signup-screen form").addEventListener("submit", function (event) {
         event.preventDefault();
         window.location.href = "Home.html";
@@ -27,6 +31,13 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "Home.html";
     });
 
+    
+    document.querySelectorAll(".guest-option").forEach(guestLink => {
+        guestLink.addEventListener("click", function (event) {
+            event.preventDefault();
+            enterAsGuest();
+        });
+    });
 
     showSignup();
 });
