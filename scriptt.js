@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
             <p>${username}</p>
             <p>${text}</p>
             <div class="stars">${"⭐".repeat(rating)}</div>
-            <button class="remove-review-btn" onclick="removeReview(this)">Remove</button>
         `;
 
         reviewContainer.appendChild(review);
@@ -30,10 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "review.html";
     };
 
-    window.removeReview = function (button) {
-        button.parentElement.remove();
-    };
-
+  
     
     createReview("User1", "Great experience!", 5);
     createReview("User2", "Loved it!", 4);
