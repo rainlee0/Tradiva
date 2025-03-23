@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Haya's Reviews</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="HeaderFoter.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Nunito:wght@300;600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/lolo.png">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Nunito", sans-serif;
+      background-color: #dce4f2;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      color: #333;
+    }
+    .page-content {
+      flex: 1;
+      display: flex;
+      max-width: 1400px;
+      width: 100%;
+      margin: 20px auto;
+      gap: 20px;
+      padding: 20px;
+    }
+    .side-menu {
+      width: 220px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-self: flex-start;
+    }
+    .side-menu ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding: 0;
+    }
+    .side-menu ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 6px;
+      display: block;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .side-menu ul li a:hover { background: #f0f0f0; transform: scale(1.02); }
+    .logout-link {
+      text-align: center;
+      padding: 10px;
+      border: 2px solid #e74c3c;
+      border-radius: 20px;
+      color: #e74c3c;
+      font-weight: 600;
+      transition: background 0.2s, color 0.2s, transform 0.2s;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+    .logout-link:hover {
+      background: #e74c3c;
+      color: #fff;
+      transform: scale(1.03);
+    }
+    .reviews-area {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-right: 20px;
+    }
+    .reviews-card {
+      background: #f5f0ec;
+      border-radius: 12px;
+      border: 1.5px solid #ccc;
+      padding: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+      
+    }
+    .reviews-card:hover { transform: scale(1.01); }
+    .reviews-card h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #324c8f;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .review-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .review-item {
+      background: #fff;
+      
+      border-radius: 10px;
+      padding: 16px;
+      position: relative;
+      border: 1.5px solid black;
+      box-shadow: 2px 3px 0px rgba(0, 0, 0, 1);
+      transition: transform 0.2s;
+    }
+    .review-item:hover { transform: scale(1.02); }
+    .review-item .country {
+      font-weight: 700;
+      color: #324c8f;
+      margin-bottom: 8px;
+      font-size: 1rem;
+    }
+    .review-item p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+    .stars {
+      color: gold;
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+    .review-actions {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      display: flex;
+      gap: 10px;
+    }
+    .review-actions .edit-link,
+    .review-actions .delete-link {
+      font-size: 0.9rem;
+      text-decoration: underline;
+      cursor: pointer;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .review-actions .edit-link:hover { color: #f39c12; }
+    .review-actions .delete-link:hover { color: #e74c3c; }
+    .footer {
+      background: #2c3e70;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      width: 100%;
+      margin-top: auto;
+    }
+    .footer-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .footer-section {
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .footer-section h3 { margin-bottom: 10px; }
+    .footer-bottom { font-size: 14px; margin-top: 10px; color: #ccc; }
+    @media (max-width: 768px) {
+      .page-content { flex-direction: column; padding: 10px; }
+      .side-menu { width: 100%; margin: 0 auto; }
+      .reviews-area { margin: 0 auto; width: 100%; }
+      .reviews-card { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-bar">
+      <span class="logo">TRDIVA</span>
+      <input type="text" placeholder="Search..." class="search-bar">
+      <nav>
+        <a href="Home.html">Home</a>
+        <a href="profilePage.html">Profile</a>
+        <a href="favPage.html">Favorite</a>
+      </nav>
+    </div>
+  </header>
+  <div class="page-content">
+    <div class="side-menu">
+      <ul>
+        <li><a href="profilePage.html">Profile</a></li>
+        <li><a href="reviewsPage.html" style="background: #f0f0f0;">Reviews</a></li>
+        <li><a href="favPage.html">Favorite</a></li>
+      </ul>
+      <a class="logout-link" onclick="logout()">Logout</a>
+    </div>
+    <div class="reviews-area">
+      <div class="reviews-card">
+        <h2>My Reviews</h2>
+        <div class="review-list">
+          <div class="review-item">
+            <div class="country">Korea</div>
+            <p><strong>"Korea is a leader in technology and innovation, with a focus on cutting-edge research and development in fields like AI, robotics, and telecommunications."</strong></p>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="review-actions">
+              <span class="edit-link" onclick="editReview(this)">Edit</span>
+              <span class="delete-link" onclick="deleteReview(this)">Delete</span>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="country">Japan</div>
+            <p><strong>"Japan offers a blend of rich cultural heritage and futuristic technology. It's a must-visit for anyone interested in unique experiences."</strong></p>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="review-actions">
+              <span class="edit-link" onclick="editReview(this)">Edit</span>
+              <span class="delete-link" onclick="deleteReview(this)">Delete</span>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="country">France</div>
+            <p><strong>"France is known for its world-class art, cuisine, and romantic ambiance. A visit to Paris is unforgettable."</strong></p>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="review-actions">
+              <span class="edit-link" onclick="editReview(this)">Edit</span>
+              <span class="delete-link" onclick="deleteReview(this)">Delete</span>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="country">Italy</div>
+            <p><strong>"Italy's rich history, beautiful landscapes, and mouth-watering cuisine make it a top destination for travelers."</strong></p>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="review-actions">
+              <span class="edit-link" onclick="editReview(this)">Edit</span>
+              <span class="delete-link" onclick="deleteReview(this)">Delete</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer" id="Footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>About Tradiva</h3>
+        <p>Your gateway to discovering hidden gems, understanding cultures, and making the most of every journey.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Our Mission</h3>
+        <p>We strive to connect travelers with authentic experiences, helping them explore new destinations with confidence and respect.</p>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2025 Tradiva. All rights reserved.</p>
+  </footer>
+  <script>
+    function logout() {
+      if (confirm("Are you sure you want to log out?")) {
+        window.location.href = "index.html";
+      }
+    }
+    function editReview(link) {
+      const reviewText = link.closest(".review-item").querySelector("p");
+      const currentText = reviewText.innerText;
+      const newText = prompt("Edit your review:", currentText);
+      if (newText) { reviewText.innerHTML = newText; }
+    }
+    function deleteReview(link) {
+      if (confirm("Are you sure you want to delete this review?")) {
+        link.closest(".review-item").remove();
+      }
+    }
+  </script>
+</body>
+</html>
